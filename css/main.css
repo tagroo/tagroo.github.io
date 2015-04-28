@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Flex Box */
+.section-wrapper {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: bold;
+  text-align: center;
+
+  min-height: 100vh;
+  align-items: center;
+}
+
+.section-wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  height: 100px;
+  /*background: tomato;*/
+}
+
+.footer {
+  height: 100px;
+  align-self: flex-end;
+  /*background: lightgreen;*/
+}
+
+.main {
+  text-align: left;
+  /*background: deepskyblue;*/
+}
+
+.aside-left {
+  /*background: gold;*/
+}
+
+.aside-right {
+  /*background: hotpink;*/
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 768px) {
+  .main    { flex: 3 0px; }
+  .aside-left { order: 1; } 
+  .main    { order: 2; }
+  .aside-right { order: 3; }
+  .footer  { order: 4; }
+}
+.section-0{
+  background-color: #FFFFFF;
+}
+.section-1{
+  background-color: #FF5B60;
+}
+.section-2{
+  background-color: #F79C82;
+}
+.section-3{
+  background-color: #FAFAFA;
+}
+.section-img-container{
+  min-height: 60vh;
+  max-height: 80vh;
+}
+.section-img{
+  width: 100%; 
+  height: auto; 
+}
+
+/* Gradient transparent - color - transparent */
+hr.style-footer {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}

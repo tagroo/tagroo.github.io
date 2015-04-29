@@ -52,18 +52,14 @@
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;*/
 }
 
-/* Categories
+/* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../img/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
-.categories .section-description { 
-  margin-bottom: 4rem;
+.footer {
+  height: 100px;
+  padding: 0;
 }
 
 /* Bigger than 550 */
@@ -93,6 +89,9 @@
   }
   .hero-heading {
     font-size: 2.4rem;
+  }
+  .footer{
+    padding: 0;
   }
 }
 
@@ -124,8 +123,8 @@
     top: -12rem;
     max-height: 472px;
   }
-  .categories {
-    padding: 15rem 0 8rem;
+  .footer{
+    padding: 0;
   }
 }
 
@@ -147,5 +146,8 @@
   .phone + .phone {
     top: -14rem;
     max-height: 570px;
+  }
+  .footer{
+    padding: 0;
   }
 }
